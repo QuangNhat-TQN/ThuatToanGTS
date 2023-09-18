@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd098171dffd2d402ce130bc2f0246d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>    
+    
+    <div style="position: fixed; 
+        top: 50px; left: 70px; width: 700px; height: 100px; 
+        background-color:white; border:2px solid grey;z-index: 900;">
+        <h5>Lộ trình:  Phố Đi Bộ Nguyễn Huệ -> Chùa Hoàng Pháp -> Chùa Vĩnh Nghiêm -> Dinh Độc Lập -> Nhà Thờ Đức Bà -> Bưu Điện Thành Phố -> Đường Sách Nguyễn Văn Bình -> Tòa Nhà Bitexco -> Chùa Bà Thiên Hậu -> Địa đạo Củ Chi -> Phố Đi Bộ Nguyễn Huệ</h5>
+        <h5>Chi phí: 118.114 km</h5>
+    </div>
+    
+    
+            <div class="folium-map" id="map_cd098171dffd2d402ce130bc2f0246d0" ></div>
+        
+</body>
+<script>    
+    
+            var map_cd098171dffd2d402ce130bc2f0246d0 = L.map(
+                "map_cd098171dffd2d402ce130bc2f0246d0",
+                {
+                    center: [10.7773895, 106.6885525],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7b4dd28d1d10098447f4ded26517ef71 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var marker_0d8736ff6d8e0274fd1fcd2b32d98c5c = L.marker(
+                [10.900273, 106.581713],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_295023164164d0400134697b49569d54 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "red"}
+            )
+            marker_0d8736ff6d8e0274fd1fcd2b32d98c5c.setIcon(beautify_icon_295023164164d0400134697b49569d54);
+        
+    
+        var popup_cb95337f6af298162bfebc15f201e8f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed644c8bd4954245be8d11d913fc4e7d = $(`<div id="html_ed644c8bd4954245be8d11d913fc4e7d" style="width: 100.0%; height: 100.0%;">Chùa Hoàng Pháp</div>`)[0];
+                popup_cb95337f6af298162bfebc15f201e8f0.setContent(html_ed644c8bd4954245be8d11d913fc4e7d);
+            
+        
+
+        marker_0d8736ff6d8e0274fd1fcd2b32d98c5c.bindPopup(popup_cb95337f6af298162bfebc15f201e8f0)
+        ;
+
+        
+    
+    
+            marker_0d8736ff6d8e0274fd1fcd2b32d98c5c.bindTooltip(
+                `<div>
+                     Chùa Hoàng Pháp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b7d34cbd14163d859032b6fcae510f2 = L.marker(
+                [10.790362, 106.682256],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_3a37c4ebef76d54e4ef9e9e4d7c0943a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "red"}
+            )
+            marker_7b7d34cbd14163d859032b6fcae510f2.setIcon(beautify_icon_3a37c4ebef76d54e4ef9e9e4d7c0943a);
+        
+    
+        var popup_dea42809036f62cd3a9fe7c1c0e055c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84e027e21aca7f920d076f75a65c938f = $(`<div id="html_84e027e21aca7f920d076f75a65c938f" style="width: 100.0%; height: 100.0%;">Chùa Vĩnh Nghiêm</div>`)[0];
+                popup_dea42809036f62cd3a9fe7c1c0e055c1.setContent(html_84e027e21aca7f920d076f75a65c938f);
+            
+        
+
+        marker_7b7d34cbd14163d859032b6fcae510f2.bindPopup(popup_dea42809036f62cd3a9fe7c1c0e055c1)
+        ;
+
+        
+    
+    
+            marker_7b7d34cbd14163d859032b6fcae510f2.bindTooltip(
+                `<div>
+                     Chùa Vĩnh Nghiêm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e158ddd177e4891feb4b1604fdf60a6c = L.marker(
+                [10.777529, 106.695818],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_33253d479cc54d6699da90669c7b2bd7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "red"}
+            )
+            marker_e158ddd177e4891feb4b1604fdf60a6c.setIcon(beautify_icon_33253d479cc54d6699da90669c7b2bd7);
+        
+    
+        var popup_83e2bf98931129cb19a53e1e894f0b49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee563850c8a60b86a45f153c61a6593e = $(`<div id="html_ee563850c8a60b86a45f153c61a6593e" style="width: 100.0%; height: 100.0%;">Dinh Độc Lập</div>`)[0];
+                popup_83e2bf98931129cb19a53e1e894f0b49.setContent(html_ee563850c8a60b86a45f153c61a6593e);
+            
+        
+
+        marker_e158ddd177e4891feb4b1604fdf60a6c.bindPopup(popup_83e2bf98931129cb19a53e1e894f0b49)
+        ;
+
+        
+    
+    
+            marker_e158ddd177e4891feb4b1604fdf60a6c.bindTooltip(
+                `<div>
+                     Dinh Độc Lập
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f1ce5477f47b733584bb3ddb292aee4 = L.marker(
+                [10.779722, 106.699009],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_ee0e265b45f3ccfb5f737ed959c9223b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "red"}
+            )
+            marker_7f1ce5477f47b733584bb3ddb292aee4.setIcon(beautify_icon_ee0e265b45f3ccfb5f737ed959c9223b);
+        
+    
+        var popup_102ef7edfc4d3fc3308c4a66bbf087d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a38d88527b90dd99d65f3de5046857cf = $(`<div id="html_a38d88527b90dd99d65f3de5046857cf" style="width: 100.0%; height: 100.0%;">Nhà Thờ Đức Bà</div>`)[0];
+                popup_102ef7edfc4d3fc3308c4a66bbf087d4.setContent(html_a38d88527b90dd99d65f3de5046857cf);
+            
+        
+
+        marker_7f1ce5477f47b733584bb3ddb292aee4.bindPopup(popup_102ef7edfc4d3fc3308c4a66bbf087d4)
+        ;
+
+        
+    
+    
+            marker_7f1ce5477f47b733584bb3ddb292aee4.bindTooltip(
+                `<div>
+                     Nhà Thờ Đức Bà
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d2a8de6e595a6e427de9afbee1781bd = L.marker(
+                [10.781087, 106.699856],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_d03a31098afccd0ae230cd99d4a474fb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "red"}
+            )
+            marker_4d2a8de6e595a6e427de9afbee1781bd.setIcon(beautify_icon_d03a31098afccd0ae230cd99d4a474fb);
+        
+    
+        var popup_e96aff66bcf0bb963053daee73ac3597 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbf6dbbe2896a28cf61e8157fe34f301 = $(`<div id="html_fbf6dbbe2896a28cf61e8157fe34f301" style="width: 100.0%; height: 100.0%;">Bưu Điện Thành Phố</div>`)[0];
+                popup_e96aff66bcf0bb963053daee73ac3597.setContent(html_fbf6dbbe2896a28cf61e8157fe34f301);
+            
+        
+
+        marker_4d2a8de6e595a6e427de9afbee1781bd.bindPopup(popup_e96aff66bcf0bb963053daee73ac3597)
+        ;
+
+        
+    
+    
+            marker_4d2a8de6e595a6e427de9afbee1781bd.bindTooltip(
+                `<div>
+                     Bưu Điện Thành Phố
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be0813d219fa24f5b82b3fc9beb05b38 = L.marker(
+                [10.780982, 106.700071],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_54b417a6699b9a0941011c90bd2ad408 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "red"}
+            )
+            marker_be0813d219fa24f5b82b3fc9beb05b38.setIcon(beautify_icon_54b417a6699b9a0941011c90bd2ad408);
+        
+    
+        var popup_c19dc9e80303fb908982f3985b4086c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7749569acea04b8278ec3f4b8aae4d2 = $(`<div id="html_c7749569acea04b8278ec3f4b8aae4d2" style="width: 100.0%; height: 100.0%;">Đường Sách Nguyễn Văn Bình</div>`)[0];
+                popup_c19dc9e80303fb908982f3985b4086c2.setContent(html_c7749569acea04b8278ec3f4b8aae4d2);
+            
+        
+
+        marker_be0813d219fa24f5b82b3fc9beb05b38.bindPopup(popup_c19dc9e80303fb908982f3985b4086c2)
+        ;
+
+        
+    
+    
+            marker_be0813d219fa24f5b82b3fc9beb05b38.bindTooltip(
+                `<div>
+                     Đường Sách Nguyễn Văn Bình
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_942a13fabf9bcae4383bb621c17d8a06 = L.marker(
+                [10.771796, 106.704325],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_f17d7443ea07befad26e6cf9028c88e8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "red"}
+            )
+            marker_942a13fabf9bcae4383bb621c17d8a06.setIcon(beautify_icon_f17d7443ea07befad26e6cf9028c88e8);
+        
+    
+        var popup_f4dcffcd65d81ffe0fe76191f8f20c8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5f9312f143e49e9dfc78068e2ef1563 = $(`<div id="html_a5f9312f143e49e9dfc78068e2ef1563" style="width: 100.0%; height: 100.0%;">Tòa Nhà Bitexco</div>`)[0];
+                popup_f4dcffcd65d81ffe0fe76191f8f20c8a.setContent(html_a5f9312f143e49e9dfc78068e2ef1563);
+            
+        
+
+        marker_942a13fabf9bcae4383bb621c17d8a06.bindPopup(popup_f4dcffcd65d81ffe0fe76191f8f20c8a)
+        ;
+
+        
+    
+    
+            marker_942a13fabf9bcae4383bb621c17d8a06.bindTooltip(
+                `<div>
+                     Tòa Nhà Bitexco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_268a85e267ff53441fdaa031e1c20ac2 = L.marker(
+                [10.753499, 106.661141],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_97102f2fcedbaad3f555291e32dff895 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "red"}
+            )
+            marker_268a85e267ff53441fdaa031e1c20ac2.setIcon(beautify_icon_97102f2fcedbaad3f555291e32dff895);
+        
+    
+        var popup_f824868f2a640066920cc46eed8d1786 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e06bbae593eb3a49747fbea69449c4a = $(`<div id="html_9e06bbae593eb3a49747fbea69449c4a" style="width: 100.0%; height: 100.0%;">Chùa Bà Thiên Hậu</div>`)[0];
+                popup_f824868f2a640066920cc46eed8d1786.setContent(html_9e06bbae593eb3a49747fbea69449c4a);
+            
+        
+
+        marker_268a85e267ff53441fdaa031e1c20ac2.bindPopup(popup_f824868f2a640066920cc46eed8d1786)
+        ;
+
+        
+    
+    
+            marker_268a85e267ff53441fdaa031e1c20ac2.bindTooltip(
+                `<div>
+                     Chùa Bà Thiên Hậu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c10ee25c81c815c9a5ca57df1079f0fe = L.marker(
+                [11.144151, 106.464553],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var beautify_icon_ef8014f9a9086d9e0f719d9b7e8145c6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 1, "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "red"}
+            )
+            marker_c10ee25c81c815c9a5ca57df1079f0fe.setIcon(beautify_icon_ef8014f9a9086d9e0f719d9b7e8145c6);
+        
+    
+        var popup_19aab464dac855bd30440f1d0a231d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_802decb9780719e5f65b50721e1fd2a7 = $(`<div id="html_802decb9780719e5f65b50721e1fd2a7" style="width: 100.0%; height: 100.0%;">Địa đạo Củ Chi</div>`)[0];
+                popup_19aab464dac855bd30440f1d0a231d7f.setContent(html_802decb9780719e5f65b50721e1fd2a7);
+            
+        
+
+        marker_c10ee25c81c815c9a5ca57df1079f0fe.bindPopup(popup_19aab464dac855bd30440f1d0a231d7f)
+        ;
+
+        
+    
+    
+            marker_c10ee25c81c815c9a5ca57df1079f0fe.bindTooltip(
+                `<div>
+                     Địa đạo Củ Chi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_190ae1a3a47ff7dd9adaebf8e7dcf1d4 = L.marker(
+                [10.773652, 106.704046],
+                {}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+    
+            var icon_4d86a97ae5ccf3886d86dc1917830c4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_190ae1a3a47ff7dd9adaebf8e7dcf1d4.setIcon(icon_4d86a97ae5ccf3886d86dc1917830c4f);
+        
+    
+        var popup_c64103c86994a8ba3d84670ec612fdf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75182216cac112cba5630995ddeab732 = $(`<div id="html_75182216cac112cba5630995ddeab732" style="width: 100.0%; height: 100.0%;">Phố Đi Bộ Nguyễn Huệ</div>`)[0];
+                popup_c64103c86994a8ba3d84670ec612fdf6.setContent(html_75182216cac112cba5630995ddeab732);
+            
+        
+
+        marker_190ae1a3a47ff7dd9adaebf8e7dcf1d4.bindPopup(popup_c64103c86994a8ba3d84670ec612fdf6)
+        ;
+
+        
+    
+    
+            marker_190ae1a3a47ff7dd9adaebf8e7dcf1d4.bindTooltip(
+                `<div>
+                     Phố Đi Bộ Nguyễn Huệ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8bb3d4881933c140eeb2660bc8fd10b4 = L.polyline(
+                [[10.773652, 106.704046], [10.900273, 106.581713], [10.790362, 106.682256], [10.777529, 106.695818], [10.779722, 106.699009], [10.781087, 106.699856], [10.780982, 106.700071], [10.771796, 106.704325], [10.753499, 106.661141], [11.144151, 106.464553], [10.773652, 106.704046]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 8}
+            ).addTo(map_cd098171dffd2d402ce130bc2f0246d0);
+        
+</script>
