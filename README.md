@@ -2,6 +2,7 @@
 Công nghệ sử dụng:
 - Ngôn ngữ lập trình Python
 - Các thư viện chính: tkinter, json, folium, tkhtmlview
+
 Chức năng:
 - Nhập dữ liệu các địa điểm từ file
 - Cho phép chọn điểm bắt đầu chuyến đi
